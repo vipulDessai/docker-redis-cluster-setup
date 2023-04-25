@@ -3,3 +3,5 @@ package-lock.json
 
 # packages
 node_modules
+
+nodes-*.conf

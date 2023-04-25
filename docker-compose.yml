@@ -1,0 +1,78 @@
+version: "10.55.88"
+services:
+  spawn_redis_cluster_node_master_a:
+    build: .
+    command: ["redis-server", "/usr/local/etc/redis/a_master.conf"]
+    environment:
+      - TZ=Etc/GMT
+    volumes:
+      - $PWD:$PWD
+    working_dir: $PWD
+    ports:
+      - "6379:6379"
+    # networks:
+    #   - redis-cluster
+  spawn_redis_cluster_node_slave_a:
+    build: .
+    command: ["redis-server", "/usr/local/etc/redis/a_replica.conf"]
+    environment:
+      - TZ=Etc/GMT
+    volumes:
+      - $PWD:$PWD
+    working_dir: $PWD
+    ports:
+      - "6382:6382"
+    # networks:
+    #   - redis-cluster
+  spawn_redis_cluster_node_master_b:
+    build: .
+    command: ["redis-server", "/usr/local/etc/redis/b_master.conf"]
+    environment:
+      - TZ=Etc/GMT
+    volumes:
+      - $PWD:$PWD
+    working_dir: $PWD
+    ports:
+      - "6380:6380"
+    # networks:
+    #   - redis-cluster
+  spawn_redis_cluster_node_slave_b:
+    build: .
+    command: ["redis-server", "/usr/local/etc/redis/b_replica.conf"]
+    environment:
+      - TZ=Etc/GMT
+    volumes:
+      - $PWD:$PWD
+    working_dir: $PWD
+    ports:
+      - "6383:6383"
+    # networks:
+    #   - redis-cluster
+  spawn_redis_cluster_node_master_c:
+    build: .
+    command: ["redis-server", "/usr/local/etc/redis/c_master.conf"]
+    environment:
+      - TZ=Etc/GMT
+    volumes:
+      - $PWD:$PWD
+    working_dir: $PWD
+    ports:
+      - "6381:6381"
+    # networks:
+    #   - redis-cluster
+  spawn_redis_cluster_node_slave_c:
+    build: .
+    command: ["redis-server", "/usr/local/etc/redis/c_replica.conf"]
+    environment:
+      - TZ=Etc/GMT
+    volumes:
+      - $PWD:$PWD
+    working_dir: $PWD
+    ports:
+      - "6384:6384"
+    # networks:
+    #   - redis-cluster
+
+networks:
+  redis-cluster:
+    driver: bridge
