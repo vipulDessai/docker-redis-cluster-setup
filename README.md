@@ -1,3 +1,13 @@
 # redis docker cluster setup
 
-- docker compose up --build
+## clean build no cache
+
+```properties
+docker compose up --build
+```
+
+## detached mode compose
+
+```properties
+docker compose up --build -d
+```
