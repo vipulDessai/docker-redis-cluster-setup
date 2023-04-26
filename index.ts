@@ -1,19 +1,40 @@
-import { createClient } from "redis";
+import { createCluster } from "redis";
 
 const redisConnector = async () => {
-  const client = createClient({
-    url: "redis://127.0.0.1:6379",
+  const cluster = createCluster({
+    rootNodes: [
+      {
+        url: "redis://localhost:7000",
+      },
+      {
+        url: "redis://localhost:7001",
+      },
+      {
+        url: "redis://localhost:7002",
+      },
+      {
+        url: "redis://localhost:7003",
+      },
+      {
+        url: "redis://localhost:7004",
+      },
+      {
+        url: "redis://localhost:7005",
+      },
+    ],
   });
 
-  client.on("error", (err) => {
-    console.log("Redis Client Error", err);
+  // @ts-ignore
+  cluster.on("error", (err) => {
+    console.log("Redis Cluster Error", err);
   });
 
-  await client.connect();
+  await cluster.connect();
 
-  await client.set("key", "value");
-  const value = await client.get("key");
-  await client.disconnect();
+  await cluster.set("k-from-ts-index", "v1-from-ts-index");
+  const value = await cluster.get("k-from-ts-index");
+
+  console.log(`value is ${value}`);
 };
 
 redisConnector();

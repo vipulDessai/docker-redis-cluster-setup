@@ -1,0 +1,116 @@
+20:C 25 Apr 2023 12:47:12.133 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+20:C 25 Apr 2023 12:47:12.163 # Redis version=7.0.11, bits=64, commit=00000000, modified=0, pid=20, just started
+20:C 25 Apr 2023 12:47:12.196 # Configuration loaded
+20:M 25 Apr 2023 12:47:12.229 * monotonic clock: POSIX clock_gettime
+20:M 25 Apr 2023 12:47:12.353 * Node configuration loaded, I'm cb8d995018f728c271917e84a5669434ad47a73e
+20:M 25 Apr 2023 12:47:12.359 * Running mode=cluster, port=7004.
+20:M 25 Apr 2023 12:47:12.377 # Server initialized
+20:M 25 Apr 2023 12:47:12.439 * Reading RDB base file on AOF loading...
+20:M 25 Apr 2023 12:47:12.444 * Loading RDB produced by version 7.0.11
+20:M 25 Apr 2023 12:47:12.448 * RDB age 2442 seconds
+20:M 25 Apr 2023 12:47:12.450 * RDB memory usage when created 1.55 Mb
+20:M 25 Apr 2023 12:47:12.452 * RDB is base AOF
+20:M 25 Apr 2023 12:47:12.454 * Done loading RDB, keys loaded: 1, keys expired: 0.
+20:M 25 Apr 2023 12:47:12.457 * DB loaded from base file appendonly.aof.3.base.rdb: 0.025 seconds
+20:M 25 Apr 2023 12:47:12.482 * DB loaded from incr file appendonly.aof.3.incr.aof: 0.022 seconds
+20:M 25 Apr 2023 12:47:12.486 * DB loaded from append only file: 0.077 seconds
+20:M 25 Apr 2023 12:47:12.500 * Opening AOF incr file appendonly.aof.3.incr.aof on server start
+20:M 25 Apr 2023 12:47:12.505 * Ready to accept connections
+20:S 25 Apr 2023 12:47:12.508 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+20:S 25 Apr 2023 12:47:12.528 * Connecting to MASTER 127.0.0.1:7002
+20:S 25 Apr 2023 12:47:12.531 * MASTER <-> REPLICA sync started
+20:S 25 Apr 2023 12:47:12.533 * Non blocking connect for SYNC fired the event.
+20:S 25 Apr 2023 12:47:12.588 * Master replied to PING, replication can continue...
+20:S 25 Apr 2023 12:47:12.590 # Cluster state changed: ok
+20:S 25 Apr 2023 12:47:12.604 * Trying a partial resynchronization (request 885cdad4b43065466bfe62c049fb1bfb10ebc7dc:1).
+20:S 25 Apr 2023 12:47:17.489 * Full resync from master: 80973f7a59d3f0bcff721a9ffcf5df6d3aef8dee:14
+20:S 25 Apr 2023 12:47:17.500 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+20:S 25 Apr 2023 12:47:17.509 * Discarding previously cached master state.
+20:S 25 Apr 2023 12:47:17.512 * MASTER <-> REPLICA sync: Flushing old data
+20:S 25 Apr 2023 12:47:17.521 * MASTER <-> REPLICA sync: Loading DB in memory
+20:S 25 Apr 2023 12:47:17.548 * Loading RDB produced by version 7.0.11
+20:S 25 Apr 2023 12:47:17.550 * RDB age 0 seconds
+20:S 25 Apr 2023 12:47:17.551 * RDB memory usage when created 1.63 Mb
+20:S 25 Apr 2023 12:47:17.554 * Done loading RDB, keys loaded: 2, keys expired: 0.
+20:S 25 Apr 2023 12:47:17.556 * MASTER <-> REPLICA sync: Finished with success
+20:S 25 Apr 2023 12:47:17.579 * Creating AOF incr file temp-appendonly.aof.incr on background rewrite
+20:S 25 Apr 2023 12:47:17.581 * Background append only file rewriting started by pid 53
+53:C 25 Apr 2023 12:47:17.598 * Successfully created the temporary AOF base file temp-rewriteaof-bg-53.aof
+53:C 25 Apr 2023 12:47:17.600 * Fork CoW for AOF rewrite: current 0 MB, peak 0 MB, average 0 MB
+20:S 25 Apr 2023 12:47:17.688 * Background AOF rewrite terminated with success
+20:S 25 Apr 2023 12:47:17.698 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-53.aof into appendonly.aof.4.base.rdb
+20:S 25 Apr 2023 12:47:17.730 * Successfully renamed the temporary AOF incr file temp-appendonly.aof.incr into appendonly.aof.4.incr.aof
+20:S 25 Apr 2023 12:47:17.752 * Removing the history file appendonly.aof.3.incr.aof in the background
+20:S 25 Apr 2023 12:47:17.780 * Removing the history file appendonly.aof.3.base.rdb in the background
+20:S 25 Apr 2023 12:47:17.804 * Background AOF rewrite finished successfully
+20:S 25 Apr 2023 13:09:17.024 # MASTER timeout: no data nor PING received...
+20:S 25 Apr 2023 13:09:17.069 # Connection with master lost.
+20:S 25 Apr 2023 13:09:17.086 * Caching the disconnected master state.
+20:S 25 Apr 2023 13:09:17.091 * Reconnecting to MASTER 127.0.0.1:7002
+20:S 25 Apr 2023 13:09:17.097 * MASTER <-> REPLICA sync started
+20:S 25 Apr 2023 13:09:17.099 * Non blocking connect for SYNC fired the event.
+20:S 25 Apr 2023 13:09:17.101 * Master replied to PING, replication can continue...
+20:S 25 Apr 2023 13:09:17.104 * Trying a partial resynchronization (request 80973f7a59d3f0bcff721a9ffcf5df6d3aef8dee:1908).
+20:S 25 Apr 2023 13:09:17.111 * Successful partial resynchronization with master.
+20:S 25 Apr 2023 13:09:17.122 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+20:S 25 Apr 2023 13:11:05.903 # MASTER timeout: no data nor PING received...
+20:S 25 Apr 2023 13:11:06.091 # Connection with master lost.
+20:S 25 Apr 2023 13:11:06.120 * Caching the disconnected master state.
+20:S 25 Apr 2023 13:11:06.158 * Reconnecting to MASTER 127.0.0.1:7002
+20:S 25 Apr 2023 13:11:06.194 * MASTER <-> REPLICA sync started
+20:S 25 Apr 2023 13:11:06.231 * Non blocking connect for SYNC fired the event.
+20:S 25 Apr 2023 13:11:06.255 * Master replied to PING, replication can continue...
+20:S 25 Apr 2023 13:11:06.323 * Trying a partial resynchronization (request 80973f7a59d3f0bcff721a9ffcf5df6d3aef8dee:1964).
+20:S 25 Apr 2023 13:11:06.330 * Successful partial resynchronization with master.
+20:S 25 Apr 2023 13:11:06.350 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+20:S 25 Apr 2023 13:21:12.495 # MASTER timeout: no data nor PING received...
+20:S 25 Apr 2023 13:21:12.541 # Connection with master lost.
+20:S 25 Apr 2023 13:21:12.559 * Caching the disconnected master state.
+20:S 25 Apr 2023 13:21:12.572 * Reconnecting to MASTER 127.0.0.1:7002
+20:S 25 Apr 2023 13:21:12.612 * MASTER <-> REPLICA sync started
+20:S 25 Apr 2023 13:21:12.662 * Non blocking connect for SYNC fired the event.
+20:S 25 Apr 2023 13:21:12.685 * Master replied to PING, replication can continue...
+20:S 25 Apr 2023 13:21:12.699 * Trying a partial resynchronization (request 80973f7a59d3f0bcff721a9ffcf5df6d3aef8dee:1978).
+20:S 25 Apr 2023 13:21:12.736 * Successful partial resynchronization with master.
+20:S 25 Apr 2023 13:21:12.774 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+20:S 25 Apr 2023 14:16:00.806 * 1 changes in 3600 seconds. Saving...
+20:S 25 Apr 2023 14:16:02.303 * Background saving started by pid 61
+61:C 25 Apr 2023 14:16:02.500 * DB saved on disk
+61:C 25 Apr 2023 14:16:02.510 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+20:S 25 Apr 2023 14:16:02.558 * Background saving terminated with success
+20:S 25 Apr 2023 14:16:02.742 # Connection with master lost.
+20:S 25 Apr 2023 14:16:02.743 * Caching the disconnected master state.
+20:S 25 Apr 2023 14:16:02.745 * Reconnecting to MASTER 127.0.0.1:7002
+20:S 25 Apr 2023 14:16:02.748 * MASTER <-> REPLICA sync started
+20:S 25 Apr 2023 14:16:02.749 * Non blocking connect for SYNC fired the event.
+20:S 25 Apr 2023 14:16:02.751 * Master replied to PING, replication can continue...
+20:S 25 Apr 2023 14:16:02.753 * Trying a partial resynchronization (request 80973f7a59d3f0bcff721a9ffcf5df6d3aef8dee:1992).
+20:S 25 Apr 2023 14:16:02.756 * Successful partial resynchronization with master.
+20:S 25 Apr 2023 14:16:02.757 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+20:S 25 Apr 2023 14:29:00.243 # Connection with master lost.
+20:S 25 Apr 2023 14:29:00.246 * Caching the disconnected master state.
+20:S 25 Apr 2023 14:29:00.249 * Reconnecting to MASTER 127.0.0.1:7002
+20:S 25 Apr 2023 14:29:00.251 * MASTER <-> REPLICA sync started
+20:S 25 Apr 2023 14:29:00.254 * Non blocking connect for SYNC fired the event.
+20:S 25 Apr 2023 14:29:00.256 * Master replied to PING, replication can continue...
+20:S 25 Apr 2023 14:29:00.258 * Trying a partial resynchronization (request 80973f7a59d3f0bcff721a9ffcf5df6d3aef8dee:2006).
+20:S 25 Apr 2023 14:29:00.261 * Successful partial resynchronization with master.
+20:S 25 Apr 2023 14:29:00.262 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+20:S 25 Apr 2023 15:42:05.825 # Connection with master lost.
+20:S 25 Apr 2023 15:42:05.845 * Caching the disconnected master state.
+20:S 25 Apr 2023 15:42:05.931 * Reconnecting to MASTER 127.0.0.1:7002
+20:S 25 Apr 2023 15:42:05.994 * MASTER <-> REPLICA sync started
+20:S 25 Apr 2023 15:42:05.999 * Non blocking connect for SYNC fired the event.
+20:S 25 Apr 2023 15:42:06.001 * Master replied to PING, replication can continue...
+20:S 25 Apr 2023 15:42:06.005 * Trying a partial resynchronization (request 80973f7a59d3f0bcff721a9ffcf5df6d3aef8dee:2034).
+20:S 25 Apr 2023 15:42:06.009 * Successful partial resynchronization with master.
+20:S 25 Apr 2023 15:42:06.011 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+20:S 25 Apr 2023 16:40:56.167 # Connection with master lost.
+20:S 25 Apr 2023 16:40:56.170 * Caching the disconnected master state.
+20:S 25 Apr 2023 16:40:56.174 * Reconnecting to MASTER 127.0.0.1:7002
+20:S 25 Apr 2023 16:40:56.179 * MASTER <-> REPLICA sync started
+20:S 25 Apr 2023 16:40:56.184 * Non blocking connect for SYNC fired the event.
+20:S 25 Apr 2023 16:40:56.190 * Master replied to PING, replication can continue...
+20:S 25 Apr 2023 16:40:56.193 * Trying a partial resynchronization (request 80973f7a59d3f0bcff721a9ffcf5df6d3aef8dee:2104).
+20:S 25 Apr 2023 16:40:56.196 * Successful partial resynchronization with master.
+20:S 25 Apr 2023 16:40:56.201 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
