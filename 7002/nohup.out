@@ -1,0 +1,61 @@
+18:C 25 Apr 2023 12:47:12.194 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+18:C 25 Apr 2023 12:47:12.232 # Redis version=7.0.11, bits=64, commit=00000000, modified=0, pid=18, just started
+18:C 25 Apr 2023 12:47:12.314 # Configuration loaded
+18:M 25 Apr 2023 12:47:12.335 * monotonic clock: POSIX clock_gettime
+18:M 25 Apr 2023 12:47:12.389 * Node configuration loaded, I'm 835b95f9413b6708f824146e40c1d93ac649785b
+18:M 25 Apr 2023 12:47:12.398 * Running mode=cluster, port=7002.
+18:M 25 Apr 2023 12:47:12.401 # Server initialized
+18:M 25 Apr 2023 12:47:12.450 * Reading RDB base file on AOF loading...
+18:M 25 Apr 2023 12:47:12.452 * Loading RDB produced by version 7.0.11
+18:M 25 Apr 2023 12:47:12.454 * RDB age 3492 seconds
+18:M 25 Apr 2023 12:47:12.456 * RDB memory usage when created 1.51 Mb
+18:M 25 Apr 2023 12:47:12.458 * RDB is base AOF
+18:M 25 Apr 2023 12:47:12.460 * Done loading RDB, keys loaded: 0, keys expired: 0.
+18:M 25 Apr 2023 12:47:12.478 * DB loaded from base file appendonly.aof.1.base.rdb: 0.033 seconds
+18:M 25 Apr 2023 12:47:12.492 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.011 seconds
+18:M 25 Apr 2023 12:47:12.495 * DB loaded from append only file: 0.061 seconds
+18:M 25 Apr 2023 12:47:12.506 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+18:M 25 Apr 2023 12:47:12.508 * Ready to accept connections
+18:M 25 Apr 2023 12:47:12.605 * Replica 127.0.0.1:7004 asks for synchronization
+18:M 25 Apr 2023 12:47:12.607 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '885cdad4b43065466bfe62c049fb1bfb10ebc7dc', my replication IDs are '1b10cce49004ef794c3b485520febfdb733476b1' and '0000000000000000000000000000000000000000')
+18:M 25 Apr 2023 12:47:12.608 * Replication backlog created, my new replication IDs are '80973f7a59d3f0bcff721a9ffcf5df6d3aef8dee' and '0000000000000000000000000000000000000000'
+18:M 25 Apr 2023 12:47:12.620 * Delay next BGSAVE for diskless SYNC
+18:M 25 Apr 2023 12:47:14.540 # Cluster state changed: ok
+18:M 25 Apr 2023 12:47:17.482 * Starting BGSAVE for SYNC with target: replicas sockets
+18:M 25 Apr 2023 12:47:17.489 * Background RDB transfer started by pid 47
+47:C 25 Apr 2023 12:47:17.491 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+18:M 25 Apr 2023 12:47:17.495 # Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+18:M 25 Apr 2023 12:47:17.584 * Background RDB transfer terminated with success
+18:M 25 Apr 2023 12:47:17.586 * Streamed RDB transfer with replica 127.0.0.1:7004 succeeded (socket). Waiting for REPLCONF ACK from slave to enable streaming
+18:M 25 Apr 2023 12:47:17.588 * Synchronization with replica 127.0.0.1:7004 succeeded
+18:M 25 Apr 2023 13:09:17.091 # Connection with replica 127.0.0.1:7004 lost.
+18:M 25 Apr 2023 13:09:17.108 * Replica 127.0.0.1:7004 asks for synchronization
+18:M 25 Apr 2023 13:09:17.111 * Partial resynchronization request from 127.0.0.1:7004 accepted. Sending 0 bytes of backlog starting from offset 1908.
+18:M 25 Apr 2023 13:11:06.165 # Connection with replica 127.0.0.1:7004 lost.
+18:M 25 Apr 2023 13:11:06.325 * Replica 127.0.0.1:7004 asks for synchronization
+18:M 25 Apr 2023 13:11:06.329 * Partial resynchronization request from 127.0.0.1:7004 accepted. Sending 0 bytes of backlog starting from offset 1964.
+18:M 25 Apr 2023 13:21:12.542 # Disconnecting timedout replica (streaming sync): 127.0.0.1:7004
+18:M 25 Apr 2023 13:21:12.572 # Connection with replica 127.0.0.1:7004 lost.
+18:M 25 Apr 2023 13:21:12.725 * Replica 127.0.0.1:7004 asks for synchronization
+18:M 25 Apr 2023 13:21:12.736 * Partial resynchronization request from 127.0.0.1:7004 accepted. Sending 0 bytes of backlog starting from offset 1978.
+18:M 25 Apr 2023 14:16:00.738 * 1 changes in 3600 seconds. Saving...
+18:M 25 Apr 2023 14:16:02.293 * Background saving started by pid 60
+60:C 25 Apr 2023 14:16:02.535 * DB saved on disk
+60:C 25 Apr 2023 14:16:02.538 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+18:M 25 Apr 2023 14:16:02.634 * Background saving terminated with success
+18:M 25 Apr 2023 14:16:02.737 # Disconnecting timedout replica (streaming sync): 127.0.0.1:7004
+18:M 25 Apr 2023 14:16:02.740 # Connection with replica 127.0.0.1:7004 lost.
+18:M 25 Apr 2023 14:16:02.754 * Replica 127.0.0.1:7004 asks for synchronization
+18:M 25 Apr 2023 14:16:02.756 * Partial resynchronization request from 127.0.0.1:7004 accepted. Sending 0 bytes of backlog starting from offset 1992.
+18:M 25 Apr 2023 14:29:00.235 # Disconnecting timedout replica (streaming sync): 127.0.0.1:7004
+18:M 25 Apr 2023 14:29:00.240 # Connection with replica 127.0.0.1:7004 lost.
+18:M 25 Apr 2023 14:29:00.259 * Replica 127.0.0.1:7004 asks for synchronization
+18:M 25 Apr 2023 14:29:00.261 * Partial resynchronization request from 127.0.0.1:7004 accepted. Sending 0 bytes of backlog starting from offset 2006.
+18:M 25 Apr 2023 15:42:05.752 # Disconnecting timedout replica (streaming sync): 127.0.0.1:7004
+18:M 25 Apr 2023 15:42:05.800 # Connection with replica 127.0.0.1:7004 lost.
+18:M 25 Apr 2023 15:42:06.006 * Replica 127.0.0.1:7004 asks for synchronization
+18:M 25 Apr 2023 15:42:06.009 * Partial resynchronization request from 127.0.0.1:7004 accepted. Sending 0 bytes of backlog starting from offset 2034.
+18:M 25 Apr 2023 16:40:56.130 # Disconnecting timedout replica (streaming sync): 127.0.0.1:7004
+18:M 25 Apr 2023 16:40:56.164 # Connection with replica 127.0.0.1:7004 lost.
+18:M 25 Apr 2023 16:40:56.195 * Replica 127.0.0.1:7004 asks for synchronization
+18:M 25 Apr 2023 16:40:56.196 * Partial resynchronization request from 127.0.0.1:7004 accepted. Sending 0 bytes of backlog starting from offset 2104.

@@ -1,0 +1,23 @@
+version: "10.55.88"
+services:
+  spawn_redis_cluster:
+    build: .
+    environment:
+      - TZ=Etc/GMT
+    volumes:
+      - $PWD:$PWD
+    working_dir: $PWD
+    command: ["/bin/bash", "./01-start-redis.sh"]
+    ports:
+      - "7000:7000"
+      - "7001:7001"
+      - "7002:7002"
+      - "7003:7003"
+      - "7004:7004"
+      - "7005:7005"
+    # networks:
+    #   - redis-cluster
+
+networks:
+  redis-cluster:
+    driver: bridge
